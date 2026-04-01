@@ -1,9 +1,9 @@
 :root {
   --bg-dark: #0b0320;
   --bg-darker: #060112;
-  --purple: #6516b8;
-  --purple-2: #7e22ce;
-  --purple-3: #9c27ff;
+  --purple: #0071aa;
+  --purple-2: #0071aa;
+  --purple-3: hsl(218, 100%, 58%);
   --teal: #0e5d73;
   --green: #1d8f2f;
   --green-dark: #167325;
@@ -154,7 +154,7 @@ textarea {
 
 .btn-primary {
   color: #fff;
-  background: linear-gradient(135deg, #6d28d9, #a21caf);
+  background: linear-gradient(135deg, #0071aa, #0071aa);
   box-shadow: 0 10px 24px rgba(125, 54, 214, 0.35);
 }
 
@@ -184,7 +184,7 @@ textarea {
 
 .btn-gradient {
   color: #fff;
-  background: linear-gradient(90deg, #ffb44d, #ff5f6d, #d946ef);
+  background: linear-gradient(90deg, #ffb44d, #ff5f6d, #0071aa);
   box-shadow: 0 12px 24px rgba(217, 70, 239, 0.22);
 }
 
