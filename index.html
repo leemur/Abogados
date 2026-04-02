@@ -14,34 +14,28 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
+  <link rel="icon" href="./image/fav.ico" type="image/x-icon" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a href="#" class="logo">
-        <div class="logo-mark">CD</div>
-        <div class="logo-text">
-          <strong>Conecta Defensa</strong>
-          <span>Tele Asesoría Legal</span>
-        </div>
+        <img src="./image/ConectaLogo.png" alt="Conecta Defensa" class="logo-img" />
       </a>
 
       <nav class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#precios">Precios y Servicios</a>
-        <a href="#quienes-somos">Quiénes somos</a>
-        <a href="#contacto" class="btn btn-sm btn-outline">Contáctanos</a>
+        <a href="#inicio" class="btn btn-sm btn-outline">Inicio</a>
+        <a href="./precios.html" class="btn btn-sm btn-outline">Precios y Servicios</a>
+        <a href="https://calendly.com/conectadefensa/30min" class="btn btn-sm btn-outline">Contáctanos</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero" id="inicio">
-  <video class="hero-bg-video" autoplay loop muted playsinline>
+    <video class="hero-bg-video" autoplay loop muted playsinline>
     <source src="./Secuencia01.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
   </video>
 
   <div class="hero-overlay"></div>
@@ -57,7 +51,7 @@
 
     <div class="hero-actions">
       <a href="https://wa.me/56956327919" class="btn btn-whatsapp">Whatsapp</a>
-      <a href="#precios" class="btn btn-primary">Reserva Aquí</a>
+      <a href="https://calendly.com/conectadefensa/30min" class="btn btn-primary">Reserva Aquí</a>
     </div>
   </div>
 </section>
@@ -81,16 +75,6 @@
     </section>
 
     <!-- PASOS -->
-    <section class="steps-intro">
-      <div class="container">
-        <div class="mini-step">
-          <div class="mini-step-icon">🎥</div>
-          <h3>3. Videollamada</h3>
-          <p>Recibe tu mejor solución legal</p>
-        </div>
-      </div>
-    </section>
-
     <section class="section light" id="proceso">
       <div class="container">
         <div class="section-head center">
@@ -101,27 +85,40 @@
           </p>
         </div>
 
-        <div class="cards-grid three">
-          <article class="info-card">
-            <div class="icon-circle">📱</div>
-            <span class="step-number">1</span>
-            <h3>Agenda tu consulta</h3>
-            <p>Ingresa y reserva tu hora disponible.</p>
-          </article>
+        <div class="carousel" id="proceso-carousel">
+          <div class="carousel-inner">
+            <button class="carousel-btn carousel-prev" aria-label="Anterior">&lt;</button>
+            <div class="carousel-track-wrapper">
+              <div class="carousel-track">
+                <article class="info-card carousel-slide active">
+                  <div class="icon-circle">📱</div>
+                  <span class="step-number">1</span>
+                  <h3>Agenda tu consulta</h3>
+                  <p>Ingresa y reserva tu hora disponible.</p>
+                </article>
 
-          <article class="info-card">
-            <div class="icon-circle">🔗</div>
-            <span class="step-number">2</span>
-            <h3>Conéctate en línea</h3>
-            <p>Conéctate al link que te enviaremos.</p>
-          </article>
+                <article class="info-card carousel-slide">
+                  <div class="icon-circle">🔗</div>
+                  <span class="step-number">2</span>
+                  <h3>Conéctate en línea</h3>
+                  <p>Conéctate al link que te enviaremos.</p>
+                </article>
 
-          <article class="info-card">
-            <div class="icon-circle">🚀</div>
-            <span class="step-number">3</span>
-            <h3>Recibe tu asesoría</h3>
-            <p>Tu solución legal en minutos, estés donde estés.</p>
-          </article>
+                <article class="info-card carousel-slide">
+                  <div class="icon-circle">🚀</div>
+                  <span class="step-number">3</span>
+                  <h3>Recibe tu asesoría</h3>
+                  <p>Tu solución legal en minutos, estés donde estés.</p>
+                </article>
+              </div>
+            </div>
+            <button class="carousel-btn carousel-next" aria-label="Siguiente">&gt;</button>
+          </div>
+          <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Paso 1"></button>
+            <button class="carousel-dot" aria-label="Paso 2"></button>
+            <button class="carousel-dot" aria-label="Paso 3"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -156,7 +153,7 @@
               <li>Se entrega cotización</li>
               <li>30 min</li>
             </ul>
-            <a href="#contacto" class="btn btn-orange">Reservar</a>
+            <a href="https://calendly.com/conectadefensa/30min" class="btn btn-orange">Reservar</a>
           </article>
 
           <article class="price-card accent-green">
@@ -168,7 +165,7 @@
               <li>Se cobra solo si ganas</li>
               <li>30 min</li>
             </ul>
-            <a href="#contacto" class="btn btn-green">Reservar</a>
+            <a href="https://calendly.com/conectadefensa/30min" class="btn btn-green">Reservar</a>
           </article>
         </div>
       </div>
@@ -201,15 +198,36 @@
 
         <div class="cards-grid two">
           <article class="testimonial-card">
-            <h3>¡Orientación precisa y rápida!</h3>
-            <p>
-              “Me ayudaron a entender el escenario y los pasos a seguir.
-              Atención puntual, amable y profesional.”
-            </p>
+            <h3>¡Atención clara y profesional!</h3>
+            <p>Me explicaron mis opciones de forma simple y realista. Excelente comunicación y rapidez en la respuesta.</p>
             <div class="testimonial-user">
-              <div class="avatar">F</div>
+              <div class="avatar"><img src="./image/testimonio3.png" alt="Marco Z." /></div>
               <div>
-                <strong>Fernanda S.</strong>
+                <strong>Marco Z.</strong>
+                <span>Cliente — TeleAsesoría</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <h3>¡Servicio serio y transparente!</h3>
+            <p>Destaco el orden del trabajo y la claridad jurídica. Sentí acompañamiento en todo momento y con una estrategia bien fundamentada.</p>
+            <div class="testimonial-user">
+              <div class="avatar"><img src="./image/testimonio4.png" alt="Maria R." /></div>
+              <div>
+                <strong>Maria R.</strong>
+                <span>Cliente — Gestión judicial</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <h3>¡Orientación precisa y rápida!</h3>
+            <p>Me ayudaron a entender el escenario y los pasos a seguir. Atención puntual, amable y profesional.</p>
+            <div class="testimonial-user">
+              <div class="avatar"><img src="./image/testimonio1.png" alt="Roberto M." /></div>
+              <div>
+                <strong>Roberto M.</strong>
                 <span>Cliente — Consulta civil</span>
               </div>
             </div>
@@ -217,14 +235,11 @@
 
           <article class="testimonial-card">
             <h3>¡Excelente experiencia online!</h3>
-            <p>
-              “La teleasesoría fue muy cómoda. Resolví mi consulta sin moverme
-              de casa, con un enfoque moderno y muy claro.”
-            </p>
+            <p>La teleasesoría fue muy cómoda. Resolví mi consulta sin moverme de casa, con un enfoque moderno y muy claro.</p>
             <div class="testimonial-user">
-              <div class="avatar">J</div>
+              <div class="avatar"><img src="./image/testimonio2.png" alt="Javier A." /></div>
               <div>
-                <strong>Javier M.</strong>
+                <strong>Javier A.</strong>
                 <span>Cliente — TeleAsesoría</span>
               </div>
             </div>
@@ -240,52 +255,65 @@
       </div>
     </section>
 
+    <!-- FUNDADOR -->
+    <section class="section light padding-socio" id="fundador">
+      <div class="container founder-grid">
+        <div class="founder-image">
+          <img src="./image/photo.png" alt="Yhan Alejandro Tudela G." />
+        </div>
+        <div class="founder-text">
+          <span class="tag">Socio</span>
+          <h2>Fundador</h2>
+          <p>Conecta Defensa nace para acercar la orientación legal a las personas, con un enfoque claro, accesible y profesional. Creemos en la importancia de una primera asesoría honesta que permita tomar decisiones informadas, combinando tecnología con criterio jurídico responsable.</p>
+          <p class="founder-name">Yhan Alejandro Tudela G.<br><span>Fundador – Conecta Defensa</span></p>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACTO -->
     <section class="section contact" id="contacto">
-      <div class="container contact-grid">
-        <div class="contact-copy">
-          <h2>¿Prefieres que te conectemos?</h2>
-          <p>Déjanos tus datos y te contactaremos a la brevedad.</p>
+      <div class="container">
+        <div class="section-head center">
+          <h2>¿Dónde encontrarnos?</h2>
+          <p>Contáctanos por WhatsApp o visítanos en nuestra oficina.</p>
         </div>
 
-        <form class="contact-form">
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Nombre" />
+        <div class="contact-grid">
+          <div class="contact-info">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">📍</span>
+                <span>Castro Sur 91, of. 5, San Antonio, región de Valparaíso, Chile</span>
+              </li>
+              <li>
+                <span class="contact-icon">📞</span>
+                <span>+56 9 5632 7919</span>
+              </li>
+              <li>
+                <span class="contact-icon">✉️</span>
+                <span>contacto@conectadefensa.cl</span>
+              </li>
+            </ul>
+            <a href="https://wa.me/56956327919" class="btn btn-whatsapp">Escríbenos por WhatsApp</a>
           </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="Email" />
+          <div class="contact-map">
+            <iframe
+              src="https://maps.google.com/maps?cid=9600865675757513162&output=embed&hl=es-419"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Conecta Defensa"
+            ></iframe>
           </div>
-
-          <div class="form-group">
-            <label for="celular">N° Celular</label>
-            <input
-              id="celular"
-              name="celular"
-              type="text"
-              placeholder="+56 9 9999 9999"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="5"
-              placeholder="Mensaje"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-gradient">Conectar</button>
-        </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="quienes-somos">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <h3>Conecta Defensa</h3>
@@ -300,22 +328,21 @@
           <li>Derecho Laboral</li>
         </ul>
       </div>
-
-      <div>
-        <h4>Contacto</h4>
-        <ul>
-          <li>📍 Castro Sur 91, of. 5, San Antonio, región de Valparaíso, Chile</li>
-          <li>📞 WhatsApp: +56 9 5632 7919</li>
-          <li>✉️ contacto@conectadefensa.cl</li>
-        </ul>
-      </div>
     </div>
 
     <div class="footer-bottom">
-      <div class="container">
-        <p>© 2025 Conecta Defensa - Todos los derechos reservados</p>
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Conecta Defensa - Todos los derechos reservados</p>
+        <div class="footer-social">
+          <a href="https://web.facebook.com/conectadefensa" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+            Facebook
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+
+  <script src="./index.js" defer></script>
 </body>
 </html>
