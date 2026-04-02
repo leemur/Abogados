@@ -25,6 +25,7 @@ function initCarousel(el, config) {
     if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
   });
 
+  goTo(0);
   if (config.autoplay) setInterval(() => goTo(current + 1), config.autoplay);
 }
 
