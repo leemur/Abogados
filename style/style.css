@@ -62,13 +62,13 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(8, 3, 24, 0.92);
+  background: linear-gradient(180deg, #000000, #0071aa);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .nav {
-  min-height: 78px;
+  min-height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +88,14 @@ textarea {
   display: block;
   object-fit: contain;
 }
+
+.logo-letters {
+  height: 70px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 
 .logo-mark {
   width: 48px;
@@ -398,7 +406,7 @@ textarea {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  background: radial-gradient(circle at top, #a855f7, #6d28d9);
+  background: radial-gradient(circle at top, #000000, #0071aa);
   color: #fff;
   font-size: 1.5rem;
 }
@@ -795,8 +803,7 @@ textarea {
   color: #fff;
   background:
     linear-gradient(rgba(7, 2, 18, 0.88), rgba(7, 2, 18, 0.94)),
-    url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80")
-      center/cover no-repeat;
+    url("../content/footerImage.jpg") center/cover no-repeat;
 }
 
 .footer-grid {
